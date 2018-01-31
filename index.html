@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="./css/pyramid.css" rel="stylesheet"> 
+    <title>Pyramid Slide</title>
+  </head>
+  <body>
+    <main>
+
+      <!-- Control Bar -->
+      <section id="control-bar">
+        <label for="select-block">Brick type:</label>
+        <select name="select-block" id="select-block">
+          <option value="clay">Clay</option>
+          <option value="stone">Stone</option>
+          <option value="metal">Metal</option>
+          <option value="glass">Glass</option>
+        </select>
+        <label for="select-height">How high?</label>
+        <input type="range" name="select-height" id="select-height" min="1" max="20" value="8">
+        <span id="height-display">8</span>
+      </section>
+
+      <!-- Pyramid Display -->
+      <section id="pyramid"></section>
+
+    </main>
+    <script src="./js/pyramid.js"></script>
+  </body>
+</html>
